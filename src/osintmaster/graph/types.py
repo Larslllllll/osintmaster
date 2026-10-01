@@ -1,0 +1,68 @@
+"""Small, explicit graph vocabulary. Serialized values remain plain strings."""
+
+from enum import Enum
+
+
+class EntityType(str, Enum):
+    USERNAME = "USERNAME"
+    PROFILE = "PROFILE"
+    EMAIL = "EMAIL"
+    PHONE = "PHONE"
+    PERSON_NAME = "PERSON_NAME"
+    ORGANIZATION = "ORGANIZATION"
+    DOMAIN = "DOMAIN"
+    URL = "URL"
+    IP_ADDRESS = "IP_ADDRESS"
+    IMAGE = "IMAGE"
+    IMAGE_HASH = "IMAGE_HASH"
+    LOCATION = "LOCATION"
+    CRYPTO_ADDRESS = "CRYPTO_ADDRESS"
+    DOCUMENT = "DOCUMENT"
+
+
+class RelationType(str, Enum):
+    USES_USERNAME = "USES_USERNAME"
+    CLAIMS_NAME = "CLAIMS_NAME"
+    CLAIMS_EMAIL = "CLAIMS_EMAIL"
+    CLAIMS_LOCATION = "CLAIMS_LOCATION"
+    LINKS_TO = "LINKS_TO"
+    RESOLVES_TO = "RESOLVES_TO"
+    REDIRECTS_TO = "REDIRECTS_TO"
+    USES_IMAGE = "USES_IMAGE"
+    SAME_IMAGE_AS = "SAME_IMAGE_AS"
+    SIMILAR_IMAGE_TO = "SIMILAR_IMAGE_TO"
+    SAME_EXTERNAL_URL = "SAME_EXTERNAL_URL"
+    DISCOVERED_FROM = "DISCOVERED_FROM"
+    POSSIBLY_SAME_AS = "POSSIBLY_SAME_AS"
+    MERGED_INTO = "MERGED_INTO"
+
+
+class ObservationState(str, Enum):
+    CONFIRMED = "CONFIRMED"
+    NOT_FOUND = "NOT_FOUND"
+    UNKNOWN = "UNKNOWN"
+    BLOCKED = "BLOCKED"
+    ERROR = "ERROR"
+    RATE_LIMITED = "RATE_LIMITED"
+    AUTH_REQUIRED = "AUTH_REQUIRED"
+    POSSIBLE = "POSSIBLE"
+    PROBABLE = "PROBABLE"
+
+
+class EvidenceMethod(str, Enum):
+    PUBLIC_API = "PUBLIC_API"
+    PUBLIC_HTML = "PUBLIC_HTML"
+    PUBLIC_METADATA = "PUBLIC_METADATA"
+    DNS = "DNS"
+    WHOIS = "WHOIS"
+    SEARCH_RESULT = "SEARCH_RESULT"
+    IMAGE_METADATA = "IMAGE_METADATA"
+    EXTERNAL_TOOL = "EXTERNAL_TOOL"
+    USER_INPUT = "USER_INPUT"
+
+
+class EvidenceStrength(str, Enum):
+    DIRECT = "direct"
+    STRONG_DERIVED = "strong_derived"
+    DERIVED = "derived"
+    WEAK = "weak"

@@ -1,0 +1,223 @@
+{
+  "timestamp_utc": "2026-10-01T07:33:41.426962+00:00",
+  "method": "Public positive control plus fresh random negative control per provider and round",
+  "caveat": "A passing control is a point-in-time check, not proof of future provider reliability.",
+  "rounds": 1,
+  "host_interval_seconds": 1.0,
+  "timeout_seconds": 8.0,
+  "summary": {
+    "PASS": 13,
+    "UNVERIFIED": 1,
+    "MISMATCH": 0
+  },
+  "records": [
+    {
+      "round": 1,
+      "provider": "GitHub",
+      "probe": "positive",
+      "username": "octocat",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 941
+    },
+    {
+      "round": 1,
+      "provider": "GitHub",
+      "probe": "random_negative",
+      "username": "osintmaster7538c2f3e677e624",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 915
+    },
+    {
+      "round": 1,
+      "provider": "GitLab",
+      "probe": "positive",
+      "username": "gitlab",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 997
+    },
+    {
+      "round": 1,
+      "provider": "GitLab",
+      "probe": "random_negative",
+      "username": "osintmaster3069343b5560190f",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 900
+    },
+    {
+      "round": 1,
+      "provider": "Codeberg",
+      "probe": "positive",
+      "username": "forgejo",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 750
+    },
+    {
+      "round": 1,
+      "provider": "Codeberg",
+      "probe": "random_negative",
+      "username": "osintmaster79d0364410014ff0",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 1002
+    },
+    {
+      "round": 1,
+      "provider": "DEV Community",
+      "probe": "positive",
+      "username": "ben",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 2315
+    },
+    {
+      "round": 1,
+      "provider": "DEV Community",
+      "probe": "random_negative",
+      "username": "osintmasterf844dd6a5741261d",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 985
+    },
+    {
+      "round": 1,
+      "provider": "Hacker News",
+      "probe": "positive",
+      "username": "pg",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 1255
+    },
+    {
+      "round": 1,
+      "provider": "Hacker News",
+      "probe": "random_negative",
+      "username": "osintmaster86f029110088bfeb",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 949
+    },
+    {
+      "round": 1,
+      "provider": "Bluesky",
+      "probe": "positive",
+      "username": "octocat",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 954
+    },
+    {
+      "round": 1,
+      "provider": "Bluesky",
+      "probe": "random_negative",
+      "username": "osintmaster5c918fc066cbcc84",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 400,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 1037
+    },
+    {
+      "round": 1,
+      "provider": "Telegram",
+      "probe": "positive",
+      "username": "telegram",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "telegram_public_preview"
+      ],
+      "elapsed_ms": 839
+    },
+    {
+      "round": 1,
+      "provider": "Telegram",
+      "probe": "random_negative",
+      "username": "osintmaster5e53bc40e76bf31a",
+      "expected": "NOT_FOUND",
+      "observed": "UNKNOWN",
+      "verdict": "UNVERIFIED",
+      "http_status": 200,
+      "error": "Public preview did not verify requested account",
+      "evidence_types": [],
+      "elapsed_ms": 869
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+name: Publish to PyPI
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: startsWith(github.event.release.tag_name, 'v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e ".[dev]"
+      - name: Check tag and PyPI version
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.error, urllib.request
+          from importlib.metadata import version
+          current = version('osintmaster')
+          assert os.environ['RELEASE_TAG'] == 'v' + current, 'Tag does not match package version'
+          try:
+              with urllib.request.urlopen('https://pypi.org/pypi/osintmaster/json', timeout=10) as response:
+                  releases = json.load(response).get('releases', {})
+          except urllib.error.HTTPError as exc:
+              if exc.code != 404:
+                  raise
+              releases = {}
+          assert current not in releases, 'Version is already published on PyPI'
+          PY
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: mypy src/osintmaster
+      - run: pytest
+      - run: python -m build
+      - run: python -m twine check dist/*
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-distributions
+          path: dist/*
+          if-no-files-found: error
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-distributions
+          path: dist
+      - uses: pypa/gh-action-pypi-publish@release/v1

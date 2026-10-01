@@ -1,0 +1,411 @@
+{
+  "timestamp_utc": "2026-10-01T07:10:43.665331+00:00",
+  "method": "Public positive control plus fresh random negative control per provider and round",
+  "caveat": "A passing control is a point-in-time check, not proof of future provider reliability.",
+  "rounds": 2,
+  "host_interval_seconds": 1.0,
+  "timeout_seconds": 8.0,
+  "summary": {
+    "PASS": 26,
+    "UNVERIFIED": 2,
+    "MISMATCH": 0
+  },
+  "records": [
+    {
+      "round": 1,
+      "provider": "GitHub",
+      "probe": "positive",
+      "username": "octocat",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 24047
+    },
+    {
+      "round": 1,
+      "provider": "GitHub",
+      "probe": "random_negative",
+      "username": "osintmaster0953188357537a89",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 2140
+    },
+    {
+      "round": 1,
+      "provider": "GitLab",
+      "probe": "positive",
+      "username": "gitlab",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 2000
+    },
+    {
+      "round": 1,
+      "provider": "GitLab",
+      "probe": "random_negative",
+      "username": "osintmasterb1522c427d9e647d",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 1594
+    },
+    {
+      "round": 1,
+      "provider": "Codeberg",
+      "probe": "positive",
+      "username": "forgejo",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 1687
+    },
+    {
+      "round": 1,
+      "provider": "Codeberg",
+      "probe": "random_negative",
+      "username": "osintmaster9e73752aa7e9ca34",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 1532
+    },
+    {
+      "round": 1,
+      "provider": "DEV Community",
+      "probe": "positive",
+      "username": "ben",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 1797
+    },
+    {
+      "round": 1,
+      "provider": "DEV Community",
+      "probe": "random_negative",
+      "username": "osintmaster6f56e96e3af00153",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 1250
+    },
+    {
+      "round": 1,
+      "provider": "Hacker News",
+      "probe": "positive",
+      "username": "pg",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 2000
+    },
+    {
+      "round": 1,
+      "provider": "Hacker News",
+      "probe": "random_negative",
+      "username": "osintmaster822869fedd63a0ac",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 1843
+    },
+    {
+      "round": 1,
+      "provider": "Bluesky",
+      "probe": "positive",
+      "username": "octocat",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 4438
+    },
+    {
+      "round": 1,
+      "provider": "Bluesky",
+      "probe": "random_negative",
+      "username": "osintmaster2f366689622258ab",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 400,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 11531
+    },
+    {
+      "round": 1,
+      "provider": "Telegram",
+      "probe": "positive",
+      "username": "telegram",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "telegram_public_preview"
+      ],
+      "elapsed_ms": 12094
+    },
+    {
+      "round": 1,
+      "provider": "Telegram",
+      "probe": "random_negative",
+      "username": "osintmastere7556b3bef1ceac2",
+      "expected": "NOT_FOUND",
+      "observed": "UNKNOWN",
+      "verdict": "UNVERIFIED",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 9219
+    },
+    {
+      "round": 2,
+      "provider": "GitHub",
+      "probe": "positive",
+      "username": "octocat",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 8718
+    },
+    {
+      "round": 2,
+      "provider": "GitHub",
+      "probe": "random_negative",
+      "username": "osintmaster6a839ece7fd5cbbf",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 8532
+    },
+    {
+      "round": 2,
+      "provider": "GitLab",
+      "probe": "positive",
+      "username": "gitlab",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 10437
+    },
+    {
+      "round": 2,
+      "provider": "GitLab",
+      "probe": "random_negative",
+      "username": "osintmaster2b303f53ebc291e4",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 8578
+    },
+    {
+      "round": 2,
+      "provider": "Codeberg",
+      "probe": "positive",
+      "username": "forgejo",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 8953
+    },
+    {
+      "round": 2,
+      "provider": "Codeberg",
+      "probe": "random_negative",
+      "username": "osintmaster63f1286934dee263",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 8078
+    },
+    {
+      "round": 2,
+      "provider": "DEV Community",
+      "probe": "positive",
+      "username": "ben",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 5297
+    },
+    {
+      "round": 2,
+      "provider": "DEV Community",
+      "probe": "random_negative",
+      "username": "osintmaster0302d13019d00f8e",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 404,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 2578
+    },
+    {
+      "round": 2,
+      "provider": "Hacker News",
+      "probe": "positive",
+      "username": "pg",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 2172
+    },
+    {
+      "round": 2,
+      "provider": "Hacker News",
+      "probe": "random_negative",
+      "username": "osintmaster0960e1ae2a0532d9",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 1625
+    },
+    {
+      "round": 2,
+      "provider": "Bluesky",
+      "probe": "positive",
+      "username": "octocat",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "api_username"
+      ],
+      "elapsed_ms": 1782
+    },
+    {
+      "round": 2,
+      "provider": "Bluesky",
+      "probe": "random_negative",
+      "username": "osintmaster5bf59287ebe85fa7",
+      "expected": "NOT_FOUND",
+      "observed": "NOT_FOUND",
+      "verdict": "PASS",
+      "http_status": 400,
+      "error": null,
+      "evidence_types": [
+        "api_not_found"
+      ],
+      "elapsed_ms": 1890
+    },
+    {
+      "round": 2,
+      "provider": "Telegram",
+      "probe": "positive",
+      "username": "telegram",
+      "expected": "CONFIRMED",
+      "observed": "CONFIRMED",
+      "verdict": "PASS",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [
+        "telegram_public_preview"
+      ],
+      "elapsed_ms": 1625
+    },
+    {
+      "round": 2,
+      "provider": "Telegram",
+      "probe": "random_negative",
+      "username": "osintmaster3bd3d9dd0f604de4",
+      "expected": "NOT_FOUND",
+      "observed": "UNKNOWN",
+      "verdict": "UNVERIFIED",
+      "http_status": 200,
+      "error": null,
+      "evidence_types": [],
+      "elapsed_ms": 1719
+    }
+  ]
+}

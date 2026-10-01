@@ -1,0 +1,50 @@
+[
+  {
+    "name": "GitHub",
+    "url": "https://github.com/{username}",
+    "category": "development",
+    "api_url": "https://api.github.com/users/{username}",
+    "api_kind": "github"
+  },
+  {
+    "name": "GitLab",
+    "url": "https://gitlab.com/{username}",
+    "category": "development",
+    "api_url": "https://gitlab.com/api/v4/users?username={username}",
+    "api_kind": "gitlab"
+  },
+  {
+    "name": "Codeberg",
+    "url": "https://codeberg.org/{username}",
+    "category": "development",
+    "api_url": "https://codeberg.org/api/v1/users/{username}",
+    "api_kind": "codeberg"
+  },
+  {
+    "name": "DEV Community",
+    "url": "https://dev.to/{username}",
+    "category": "development",
+    "api_url": "https://dev.to/api/users/by_username?url={username}",
+    "api_kind": "devto"
+  },
+  {
+    "name": "Hacker News",
+    "url": "https://news.ycombinator.com/user?id={username}",
+    "category": "community",
+    "api_url": "https://hacker-news.firebaseio.com/v0/user/{username}.json",
+    "api_kind": "hackernews"
+  },
+  {
+    "name": "Bluesky",
+    "url": "https://bsky.app/profile/{username}.bsky.social",
+    "category": "social",
+    "api_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={username}.bsky.social",
+    "api_kind": "bluesky"
+  },
+  {
+    "name": "Telegram",
+    "url": "https://t.me/{username}",
+    "category": "social",
+    "page_kind": "telegram"
+  }
+]

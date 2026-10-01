@@ -1,0 +1,12 @@
+timeout = 10
+max_concurrency = 5
+per_host_concurrency = 2
+host_interval = 1.0
+reports_dir = "./reports"
+
+[providers]
+sherlock = false
+maigret = false
+
+[plugins]
+enabled = []

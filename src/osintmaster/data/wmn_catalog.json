@@ -1,0 +1,3210 @@
+{
+  "source": "https://github.com/WebBreacher/WhatsMyName/blob/062bcfe48df79fa618e96edc79dc9673f3fe5643/wmn-data.json",
+  "source_commit": "062bcfe48df79fa618e96edc79dc9673f3fe5643",
+  "license": [
+    "Copyright (C) 2015-2026 Micah Hoffman",
+    "This work is licensed under the Creative Commons Attribution-ShareAlike",
+    "4.0 International License. To view a copy of this license, visit",
+    "http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to",
+    "Creative Commons, PO Box 1866, Mountain View, CA 94042, USA."
+  ],
+  "adaptation": "Selected GET-only public profile rules that passed one positive and one fresh negative canary on 2026-10-01. Some absent-account rules use HTTP 404 alone where the upstream negative body marker drifted; these were independently rechecked. Adapted marker names and URL placeholders for OSINTMaster. This data is CC BY-SA 4.0; the application code is MIT.",
+  "sites": [
+    {
+      "name": "7dach",
+      "url": "https://7dach.ru/profile/{username}",
+      "check_url": "https://7dach.ru/profile/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Информация / Профиль",
+      "negative_marker": "<title>Ошибка / 7dach.ru",
+      "known_positive": [
+        "lana",
+        "svetlana"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "about.me",
+      "url": "https://about.me/{username}",
+      "check_url": "https://about.me/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": " | about.me",
+      "negative_marker": "<title>about.me</title>",
+      "known_positive": [
+        "john",
+        "jill"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "ACF",
+      "url": "https://support.advancedcustomfields.com/forums/users/{username}/",
+      "check_url": "https://support.advancedcustomfields.com/forums/users/{username}/",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "bbp-user-body",
+      "negative_marker": "<title>Page Not Found - ACF Support</title>",
+      "known_positive": [
+        "mike",
+        "greg"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "alik",
+      "url": "https://www.alik.cz/u/{username}",
+      "check_url": "https://www.alik.cz/u/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Vizitka – Alík.cz</title>",
+      "negative_marker": "<title>Vizitka nenalezena",
+      "known_positive": [
+        "igor",
+        "pavel"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Alura",
+      "url": "https://cursos.alura.com.br/user/{username}",
+      "check_url": "https://cursos.alura.com.br/user/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Perfil de",
+      "negative_marker": "\"error\":\"Not Found\"",
+      "known_positive": [
+        "edmilson",
+        "jonathan"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Aparat",
+      "url": "https://www.aparat.com/{username}",
+      "check_url": "https://www.aparat.com/api/fa/v1/user/user/information/username/{username}",
+      "category": "video",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"data\":{",
+      "negative_marker": "\"status\":404",
+      "known_positive": [
+        "unni_gilda",
+        "Dokhmal1389"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Artbreeder",
+      "url": "https://www.artbreeder.com/{username}",
+      "check_url": "https://www.artbreeder.com/{username}",
+      "category": "art",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "data-tutorial=\"profile-filter\"",
+      "negative_marker": "error: {message:\"User not found\"",
+      "known_positive": [
+        "dolores",
+        "cyborghyena"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "asciinema",
+      "url": "https://asciinema.org/~{username}",
+      "check_url": "https://asciinema.org/~{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"profile-page\"",
+      "negative_marker": "<h1>404 Not Found</h1>",
+      "known_positive": [
+        "john",
+        "red"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "AtCoder",
+      "url": "https://atcoder.jp/users/{username}",
+      "check_url": "https://atcoder.jp/users/{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<h3>Contest Status</h3>",
+      "negative_marker": ">404 Page Not Found</h1>",
+      "known_positive": [
+        "apiad",
+        "kotatsugame"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "au.ru",
+      "url": "https://au.ru/user/{username}/",
+      "check_url": "https://au.ru/user/{username}/",
+      "category": "misc",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Лоты пользователя ",
+      "negative_marker": "Пользователь не найден",
+      "known_positive": [
+        "Svetlana7",
+        "nastya"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Audiojungle",
+      "url": "https://audiojungle.net/user/{username}",
+      "check_url": "https://audiojungle.net/user/{username}",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "s profile on AudioJungle",
+      "negative_marker": "404 - Nothing to see here",
+      "known_positive": [
+        "john",
+        "reds"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Bandcamp",
+      "url": "https://bandcamp.com/{username}",
+      "check_url": "https://bandcamp.com/{username}",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": " collection | Bandcamp</title>",
+      "negative_marker": "<h2>Sorry, that something isn’t here.</h2>",
+      "known_positive": [
+        "alice",
+        "bob"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Bandlab",
+      "url": "https://www.bandlab.com/{username}",
+      "check_url": "https://www.bandlab.com/api/v1.3/users/{username}",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "",
+      "known_positive": [
+        "rave_flawless",
+        "delutaya"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Behance",
+      "url": "https://www.behance.net/{username}",
+      "check_url": "https://www.behance.net/{username}",
+      "category": "business",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"entityOwners\":[{\"username",
+      "negative_marker": "\"entityOwners\":[]",
+      "known_positive": [
+        "mangarawma",
+        "atelieravocado"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Bimpos",
+      "url": "https://ask.bimpos.com/user/{username}",
+      "check_url": "https://ask.bimpos.com/user/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<title>User ",
+      "negative_marker": "Page not found",
+      "known_positive": [
+        "john",
+        "db"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Bio Site",
+      "url": "https://bio.site/{username}",
+      "check_url": "https://bio.site/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "— Bio Sites</title>",
+      "negative_marker": "This Bio Site doesn’t exist — Bio Site</title>",
+      "known_positive": [
+        "leticiabufoni",
+        "kayurkaRhea"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Bugcrowd",
+      "url": "https://bugcrowd.com/h/{username}",
+      "check_url": "https://bugcrowd.com/profile-service/v1/profiles/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "\"error\":\"Not Found\"",
+      "known_positive": [
+        "BlackMist",
+        "buraaqsec"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Bunpro",
+      "url": "https://community.bunpro.jp/u/{username}.json",
+      "check_url": "https://community.bunpro.jp/u/{username}.json",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "username",
+      "negative_marker": "The requested URL or resource could not be found.",
+      "known_positive": [
+        "blacktide",
+        "honey"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Career.habr",
+      "url": "https://career.habr.com/{username}",
+      "check_url": "https://career.habr.com/{username}",
+      "category": "business",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "— Хабр Карьера</title>",
+      "negative_marker": "Ошибка 404",
+      "known_positive": [
+        "sergey-kobets3",
+        "fixten"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "cfx.re",
+      "url": "https://forum.cfx.re/u/{username}/summary",
+      "check_url": "https://forum.cfx.re/u/{username}.json",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "created_at",
+      "negative_marker": "The requested URL or resource could not be found.",
+      "known_positive": [
+        "masiball",
+        "anel_hadzyc"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Chocolatey",
+      "url": "https://community.chocolatey.org/profiles/{username}",
+      "check_url": "https://community.chocolatey.org/profiles/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "id =\"bioSection\"",
+      "negative_marker": "id=\"error404Message\"",
+      "known_positive": [
+        "daronmcintosh",
+        "dcmtkOL"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Choko.Link",
+      "url": "https://choko.link/{username}",
+      "check_url": "https://choko.link/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "--title-font-family: Roboto;",
+      "negative_marker": "",
+      "known_positive": [
+        "ForgedSteelTools",
+        "eugeniapsychology"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Coda",
+      "url": "https://coda.io/@{username}/",
+      "check_url": "https://coda.io/@{username}/",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "- Coda Profile</title>",
+      "negative_marker": "",
+      "known_positive": [
+        "huizer",
+        "kennywong"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "codementor",
+      "url": "https://www.codementor.io/@{username}",
+      "check_url": "https://www.codementor.io/@{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "ABOUT ME",
+      "negative_marker": "404/favicon.png",
+      "known_positive": [
+        "e4c5",
+        "juanelfers"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Coderwall",
+      "url": "https://coderwall.com/{username}/",
+      "check_url": "https://coderwall.com/{username}/",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "s profile |",
+      "negative_marker": "404! Our feels when that url is used",
+      "known_positive": [
+        "john",
+        "test"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Commudle",
+      "url": "https://www.commudle.com/users/{username}",
+      "check_url": "https://json.commudle.com/api/v2/users?username={username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"status\":200",
+      "negative_marker": "\"status\":404",
+      "known_positive": [
+        "akaashtripathi",
+        "cataluna84"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Coub",
+      "url": "https://coub.com/{username}/",
+      "check_url": "https://coub.com/api/v2/channels/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"user_id\":",
+      "negative_marker": "",
+      "known_positive": [
+        "djantidog",
+        "mcnorington"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Designspriation",
+      "url": "https://www.designspiration.com/{username}/",
+      "check_url": "https://www.designspiration.com/{username}/",
+      "category": "art",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "has discovered on Designspiration",
+      "negative_marker": "",
+      "known_positive": [
+        "sam",
+        "smith"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Diablo",
+      "url": "https://diablo2.io/member/{username}/",
+      "check_url": "https://diablo2.io/member/{username}/",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Viewing profile - ",
+      "negative_marker": "The requested user does not exist",
+      "known_positive": [
+        "Mike01",
+        "John"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "DIBIZ",
+      "url": "https://www.dibiz.com/{username}",
+      "check_url": "https://www.dibiz.com/{username}",
+      "category": "business",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Add to contacts</span>",
+      "negative_marker": "An Error Has Occurred",
+      "known_positive": [
+        "fractalhue",
+        "rid"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "discuss.elastic.co",
+      "url": "https://discuss.elastic.co/u/{username}",
+      "check_url": "https://discuss.elastic.co/u/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<title>  Profile",
+      "negative_marker": "Oops!",
+      "known_positive": [
+        "whoami",
+        "johndoe"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "DOU",
+      "url": "https://dou.ua/users/{username}/",
+      "check_url": "https://dou.ua/users/{username}/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"page-profile\"",
+      "negative_marker": "class=\"page-error\"",
+      "known_positive": [
+        "doucommunity",
+        "volodymyrobrizan"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Dribbble",
+      "url": "https://dribbble.com/{username}",
+      "check_url": "https://dribbble.com/{username}",
+      "category": "art",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": " | Dribbble",
+      "negative_marker": "(404)</title>",
+      "known_positive": [
+        "UI8",
+        "keeplegend"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Expressional.social (Mastodon Instance)",
+      "url": "https://expressional.social/@{username}",
+      "check_url": "https://expressional.social/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "jippi",
+        "poolesen"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Fosstodon.org (Mastodon Instance)",
+      "url": "https://fosstodon.org/@{username}",
+      "check_url": "https://fosstodon.org/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "linux",
+        "Phil35"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Freelance.ua",
+      "url": "https://freelance.ua/user/{username}/",
+      "check_url": "https://freelance.ua/user/{username}/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "p-profile-avatar",
+      "negative_marker": "Схоже, дана сторінка не знайдена",
+      "known_positive": [
+        "tkachenkoalex",
+        "oleksandrseo1"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "freesound",
+      "url": "https://freesound.org/people/{username}/",
+      "check_url": "https://freesound.org/people/{username}/section/stats/?ajax=1",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "forum posts",
+      "negative_marker": "<h1>Page not found</h1>",
+      "known_positive": [
+        "Manu593",
+        "somewhereinjp"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Geocaching",
+      "url": "https://www.geocaching.com/p/?u={username}",
+      "check_url": "https://www.geocaching.com/p/?u={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"hax-profile\"",
+      "negative_marker": "class=\"callout http-error\"",
+      "known_positive": [
+        "moun10bike",
+        "niraD"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Gigapan",
+      "url": "https://www.gigapan.com/profiles/{username}",
+      "check_url": "https://www.gigapan.com/profiles/{username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "width=\"100\"",
+      "negative_marker": "<a href=\"/gigapans\">View Gigapans</a>",
+      "known_positive": [
+        "test",
+        "lucahammer"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "GNOME (Shell Extensions)",
+      "url": "https://extensions.gnome.org/accounts/profile/{username}",
+      "check_url": "https://extensions.gnome.org/accounts/profile/{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"user-details\"",
+      "negative_marker": "<h3>404 - Page not Found</h3>",
+      "known_positive": [
+        "johnny",
+        "dev"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "gpodder.net",
+      "url": "https://gpodder.net/user/{username}/",
+      "check_url": "https://gpodder.net/user/{username}/",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "mdash; gpodder.net",
+      "negative_marker": "404 - Not found",
+      "known_positive": [
+        "blue",
+        "red"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Graphics.social (Mastodon Instance)",
+      "url": "https://graphics.social/@{username}",
+      "check_url": "https://graphics.social/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "brian",
+        "moonpotato"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Habbo.com",
+      "url": "https://www.habbo.com/profile/{username}",
+      "check_url": "https://www.habbo.com/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "john",
+        "michelle"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.com.br",
+      "url": "https://www.habbo.com.br/profile/{username}",
+      "check_url": "https://www.habbo.com.br/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "jeaniucas",
+        "cellao"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.com.tr",
+      "url": "https://www.habbo.com.tr/profile/{username}",
+      "check_url": "https://www.habbo.com.tr/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "fatma9180",
+        "elektrikci"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.de",
+      "url": "https://www.habbo.de/profile/{username}",
+      "check_url": "https://www.habbo.de/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "klaus",
+        "angelinaa"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.es",
+      "url": "https://www.habbo.es/profile/{username}",
+      "check_url": "https://www.habbo.es/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "not-found",
+      "known_positive": [
+        "juan",
+        "michelle"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Habbo.fi",
+      "url": "https://www.habbo.fi/profile/{username}",
+      "check_url": "https://www.habbo.fi/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "cucumberz",
+        "Yasline"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.fr",
+      "url": "https://www.habbo.fr/profile/{username}",
+      "check_url": "https://www.habbo.fr/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "2006",
+        "sicilienne"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.it",
+      "url": "https://www.habbo.it/profile/{username}",
+      "check_url": "https://www.habbo.it/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "samsebek",
+        "papablu"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habbo.nl",
+      "url": "https://www.habbo.nl/profile/{username}",
+      "check_url": "https://www.habbo.nl/api/public/users?name={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "uniqueId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "XOTWOD.xx",
+        "xoSorxo"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Habr (Q&A)",
+      "url": "https://qna.habr.com/user/{username}",
+      "check_url": "https://qna.habr.com/user/{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"page-header__info\"",
+      "negative_marker": "icon_error_404",
+      "known_positive": [
+        "Masthead",
+        "dmitriypur"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Habr (User)",
+      "url": "https://habr.com/ru/users/{username}/",
+      "check_url": "https://habr.com/ru/users/{username}/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "tm-page tm-user",
+      "negative_marker": "tm-error-message",
+      "known_positive": [
+        "Bo0oM",
+        "AlhimicMan"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Habtium",
+      "url": "https://habtium.es/{username}",
+      "check_url": "https://habtium.es/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<div class=\"profile-info",
+      "negative_marker": "<h1 class=\"section red\">Oops!",
+      "known_positive": [
+        "diegjeremy",
+        "suigetsu"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "HackAdvisor",
+      "url": "https://hackadvisor.io/hacker/{username}",
+      "check_url": "https://hackadvisor.io/api/v2/profile/{username}/",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "{\"detail\":\"Username not found\"}",
+      "known_positive": [
+        "WorstWurst",
+        "shriyanss"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Hackster",
+      "url": "https://www.hackster.io/{username}",
+      "check_url": "https://www.hackster.io/{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "data-hypernova-key=\"UserProfile\"",
+      "negative_marker": "id=\"error\"",
+      "known_positive": [
+        "hendra",
+        "sologithu"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Hcommons.social (Mastodon Instance)",
+      "url": "https://hcommons.social/@{username}",
+      "check_url": "https://hcommons.social/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "hello",
+        "iuulaio"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Hometech.social (Mastodon Instance)",
+      "url": "https://hometech.social/@{username}",
+      "check_url": "https://hometech.social/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "one4ll",
+        "seth"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Hostux.social (Mastodon Instance)",
+      "url": "https://hostux.social/@{username}",
+      "check_url": "https://hostux.social/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "",
+      "known_positive": [
+        "alarig",
+        "rsmela"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Houzz",
+      "url": "https://www.houzz.com/user/{username}",
+      "check_url": "https://www.houzz.com/user/{username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Followers",
+      "negative_marker": "Page Not Found",
+      "known_positive": [
+        "liam",
+        "alex"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "HubPages",
+      "url": "https://hubpages.com/@{username}",
+      "check_url": "https://hubpages.com/@{username}",
+      "category": "blog",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "name\">Followers",
+      "negative_marker": "",
+      "known_positive": [
+        "greeneyes1607",
+        "lmmartin"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "HuggingFace",
+      "url": "https://huggingface.co/{username}",
+      "check_url": "https://huggingface.co/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "data-target=\"UserProfile\"",
+      "negative_marker": "content=\"404 – Hugging Face\"",
+      "known_positive": [
+        "hack",
+        "dev"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "icq-chat",
+      "url": "https://icq.icqchat.co/members/{username}/",
+      "check_url": "https://icq.icqchat.co/members/{username}/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"memberHeader-mainContent",
+      "negative_marker": "<title>Oops! We ran into some problems.",
+      "known_positive": [
+        "brookenora.54",
+        "bigdaddy.77"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "ILGM Growers Forum",
+      "url": "https://ilgmforum.com/u/{username}/summary",
+      "check_url": "https://ilgmforum.com/u/{username}/summary.json",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "user_summary\":{",
+      "negative_marker": "errors\":[\"The requested URL",
+      "known_positive": [
+        "spc95b00",
+        "growdoc"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Imgur",
+      "url": "https://imgur.com/user/{username}/about",
+      "check_url": "https://api.imgur.com/account/v1/accounts/{username}?client_id=546c25a59c58ad7",
+      "category": "images",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "\"code\":\"404\"",
+      "known_positive": [
+        "OliverClothesoff70",
+        "DadOnTheInternet"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "inaturalist",
+      "url": "https://inaturalist.nz/people/{username}",
+      "check_url": "https://api.inaturalist.org/v1/users/{username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"results\":[{",
+      "negative_marker": "\"status\":404",
+      "known_positive": [
+        "greg",
+        "tom"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Instructables",
+      "url": "https://www.instructables.com/member/{username}/",
+      "check_url": "https://www.instructables.com/json-api/showAuthorExists?screenName={username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"exists\": true",
+      "negative_marker": "\"error\": \"Sorry, we couldn't find that one!\"",
+      "known_positive": [
+        "davidandora",
+        "test"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Intigriti",
+      "url": "https://app.intigriti.com/profile/{username}",
+      "check_url": "https://app.intigriti.com/api/user/public/profile/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"userName\":",
+      "negative_marker": "class=\"error-page-container\"",
+      "known_positive": [
+        "vampire01",
+        "kenshiin"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "itch.io",
+      "url": "https://itch.io/profile/{username}",
+      "check_url": "https://itch.io/profile/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"user_data\"",
+      "negative_marker": "class=\"not_found_page page_widget base_widget\"",
+      "known_positive": [
+        "obliviist",
+        "finch"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "JBZD",
+      "url": "https://jbzd.com.pl/uzytkownik/{username}",
+      "check_url": "https://jbzd.com.pl/uzytkownik/{username}",
+      "category": "images",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Dzidy użytkownika",
+      "negative_marker": "Błąd 404",
+      "known_positive": [
+        "test",
+        "janek"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Kaggle",
+      "url": "https://www.kaggle.com/{username}",
+      "check_url": "https://www.kaggle.com/{username}",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "property=\"og:username\"",
+      "negative_marker": "<title>Kaggle: Your Home for Data Science</title>",
+      "known_positive": [
+        "charmq",
+        "tunguz"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "komi",
+      "url": "https://{username}.komi.io",
+      "check_url": "https://api.komi.io/api/talent/usernames/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "accountStatus\":\"active",
+      "negative_marker": "The talent profile was not found",
+      "known_positive": [
+        "abbysage",
+        "iamdsprings"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "kwejk.pl",
+      "url": "https://kwejk.pl/uzytkownik/{username}#/tablica/",
+      "check_url": "https://kwejk.pl/uzytkownik/{username}#/tablica/",
+      "category": "images",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Kwejki użytkownika",
+      "negative_marker": "404 - strona nie została znaleziona - KWEJK.pl",
+      "known_positive": [
+        "test",
+        "janek"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Libretooth.gr (Mastodon Instance)",
+      "url": "https://libretooth.gr/@{username}",
+      "check_url": "https://libretooth.gr/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "infolibre",
+        "tzinalilik"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "linux.org.ru",
+      "url": "https://www.linux.org.ru/people/{username}/profile",
+      "check_url": "https://www.linux.org.ru/people/{username}/profile",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Дата регистрации",
+      "negative_marker": "Пользователя не существует",
+      "known_positive": [
+        "john",
+        "bob"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Magnific",
+      "url": "https://www.magnific.com/app/creator/{username}",
+      "check_url": "https://www.magnific.com/app/api/community/creator-info-by-name?creator_name={username}&lang=en_US",
+      "category": "art",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"creator\":",
+      "negative_marker": "\"message\":\"Creator not found\"",
+      "known_positive": [
+        "membiz",
+        "LaraRed"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mapstodon.space (Mastodon Instance)",
+      "url": "https://mapstodon.space/@{username}",
+      "check_url": "https://mapstodon.space/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "Autumnhussar",
+        "jeremy"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Masto.nyc (Mastodon Instance)",
+      "url": "https://masto.nyc/@{username}",
+      "check_url": "https://masto.nyc/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "seano",
+        "jayjay718"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mastodon-101010.pl",
+      "url": "https://101010.pl/@{username}",
+      "check_url": "https://101010.pl/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@101010.pl",
+      "negative_marker": "The page you are looking for isn&#39;t here.",
+      "known_positive": [
+        "szekspir",
+        "xaphanpl"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mastodon-C.IM",
+      "url": "https://c.im/@{username}",
+      "check_url": "https://c.im/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@c.im) - C.IM</title>",
+      "negative_marker": "<title>The page you are looking for isn&#39;t here",
+      "known_positive": [
+        "admin",
+        "paidugroup"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mastodon-Defcon",
+      "url": "https://defcon.social/@{username}",
+      "check_url": "https://defcon.social/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "- DEF CON Social</title>",
+      "negative_marker": "The page you are looking for isn&#39;t here.",
+      "known_positive": [
+        "defcon",
+        "buttersnatcher"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mastodon-mastodon",
+      "url": "https://mastodon.social/@{username}",
+      "check_url": "https://mastodon.social/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "profile:username",
+      "negative_marker": "",
+      "known_positive": [
+        "john",
+        "alex"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Mastodon-rigcz.club",
+      "url": "https://rigcz.club/@{username}",
+      "check_url": "https://rigcz.club/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@rigcz.club",
+      "negative_marker": "",
+      "known_positive": [
+        "blazej",
+        "adam"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Mastodon-Toot.Community",
+      "url": "https://toot.community/@{username}",
+      "check_url": "https://toot.community/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@toot.community) - toot.community</title>",
+      "negative_marker": "The page you are looking for isn&#39;t here.",
+      "known_positive": [
+        "Johnny",
+        "jorijn"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mastodon.online",
+      "url": "https://mastodon.online/@{username}",
+      "check_url": "https://mastodon.online/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@mastodon.online) - Mastodon</title>",
+      "negative_marker": "<title>The page you are looking for isn&#39;t here.",
+      "known_positive": [
+        "Gargron",
+        "RDHale"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/users/{username}/",
+      "check_url": "https://learn.microsoft.com/api/profiles/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"userId\":",
+      "negative_marker": "",
+      "known_positive": [
+        "nityan",
+        "kimberlm"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Mixcloud",
+      "url": "https://www.mixcloud.com/{username}/",
+      "check_url": "https://api.mixcloud.com/{username}/",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "\"error\":",
+      "known_positive": [
+        "DjHunnyBee",
+        "vegarecords"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Monkeytype",
+      "url": "https://monkeytype.com/profile/{username}",
+      "check_url": "https://api.monkeytype.com/users/{username}/profile",
+      "category": "coding",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"message\":\"Profile retrieved\"",
+      "negative_marker": "\"message\":\"User not found\"",
+      "known_positive": [
+        "rocket",
+        "risenrelic"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "mssg.me",
+      "url": "https://{username}.mssg.me/",
+      "check_url": "https://{username}.mssg.me/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "property=\"og:title\"",
+      "negative_marker": "id=\"page_404\"",
+      "known_positive": [
+        "drrry",
+        "david"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "MyAnimeList",
+      "url": "https://myanimelist.net/profile/{username}",
+      "check_url": "https://myanimelist.net/profile/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Profile - MyAnimeList.net",
+      "negative_marker": "<title>404 Not Found",
+      "known_positive": [
+        "test",
+        "admin"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "MyLot",
+      "url": "https://www.mylot.com/{username}",
+      "check_url": "https://www.mylot.com/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "on myLot</title>",
+      "negative_marker": " / Whoops!",
+      "known_positive": [
+        "Tampa_girl7"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "MySpace",
+      "url": "https://myspace.com/{username}",
+      "check_url": "https://myspace.com/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<!-- Profile -->",
+      "negative_marker": "<!-- 404 -->",
+      "known_positive": [
+        "alice",
+        "bob"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Neocities",
+      "url": "https://neocities.org/site/{username}",
+      "check_url": "https://neocities.org/site/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "noindex, follow",
+      "negative_marker": "- Not Found</title>",
+      "known_positive": [
+        "fauux",
+        "sadgrl"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Nightbot",
+      "url": "https://nightbot.tv/t/{username}/commands",
+      "check_url": "https://api.nightbot.tv/1/channels/t/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"status\":200",
+      "negative_marker": "\"status\":404",
+      "known_positive": [
+        "saevid",
+        "proxyfox"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Nitecrew (Mastodon Instance)",
+      "url": "https://nitecrew.rip/@{username}",
+      "check_url": "https://nitecrew.rip/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "Myxx",
+        "honey"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Note",
+      "url": "https://note.com/{username}",
+      "check_url": "https://note.com/api/v2/creators/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"data\":{",
+      "negative_marker": "\"data\":\"リソースが見つかりません\"",
+      "known_positive": [
+        "honey",
+        "yui"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/user/{username}",
+      "check_url": "https://www.openstreetmap.org/user/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Mapper since:",
+      "negative_marker": "does not exist",
+      "known_positive": [
+        "kemkim",
+        "MapmasterBit"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Pastebin",
+      "url": "https://pastebin.com/u/{username}",
+      "check_url": "https://pastebin.com/u/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"user-view\"",
+      "negative_marker": "Not Found (#404)",
+      "known_positive": [
+        "test",
+        "john"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Pillowfort",
+      "url": "https://www.pillowfort.social/{username}",
+      "check_url": "https://www.pillowfort.social/{username}/json/?p=1",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"posts\":",
+      "negative_marker": "<title>(404)</title>",
+      "known_positive": [
+        "MissMoonified",
+        "lunasdestiny"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Planoly",
+      "url": "https://planoly.store/{username}",
+      "check_url": "https://planoly.store/{username}",
+      "category": "misc",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"creatorLink\":{",
+      "negative_marker": "",
+      "known_positive": [
+        "divinemystique",
+        "brujasesoterica"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Plink",
+      "url": "https://plink.gg/user/{username}",
+      "check_url": "https://plink.gg/user/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"user-page\"",
+      "negative_marker": "",
+      "known_positive": [
+        "CryptonianTV",
+        "xacstonyjx"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Poshmark",
+      "url": "https://poshmark.com/closet/{username}",
+      "check_url": "https://poshmark.com/closet/{username}",
+      "category": "shopping",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": " is using Poshmark to sell items from their closet.",
+      "negative_marker": "",
+      "known_positive": [
+        "alice",
+        "bob"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Poweredbygay.social (Mastodon Instance)",
+      "url": "https://poweredbygay.social/@{username}",
+      "check_url": "https://poweredbygay.social/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "aggiepm",
+        "eplumley1976"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Prose",
+      "url": "https://prose.astral.camp/{username}/",
+      "check_url": "https://prose.astral.camp/{username}/",
+      "category": "blog",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "blog-title",
+      "negative_marker": "",
+      "known_positive": [
+        "endeavorance",
+        "overthinkification"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Raddle.me",
+      "url": "https://raddle.me/user/{username}",
+      "check_url": "https://raddle.me/user/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "sidebar__title",
+      "negative_marker": "404 Not Found",
+      "known_positive": [
+        "zephyr",
+        "Archaplain"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Rant.li",
+      "url": "https://rant.li/{username}/",
+      "check_url": "https://rant.li/{username}/",
+      "category": "blog",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "blog-title",
+      "negative_marker": "",
+      "known_positive": [
+        "baretri",
+        "arinbasu"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Refsheet",
+      "url": "https://refsheet.net/{username}",
+      "check_url": "https://refsheet.net/{username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "og:title",
+      "negative_marker": "",
+      "known_positive": [
+        "razzyaurealis",
+        "saki"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Roberts Space Industries",
+      "url": "https://robertsspaceindustries.com/community-hub/user/{username}",
+      "check_url": "https://robertsspaceindustries.com/community-hub/user/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Query\",\"creator",
+      "negative_marker": "\"/404\",\"query",
+      "known_positive": [
+        "BASXIII",
+        "Quantum_Physicist"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Shikimori",
+      "url": "https://shikimori.io/{username}",
+      "check_url": "https://shikimori.io/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"profile-head\"",
+      "negative_marker": "class=\"error-404\"",
+      "known_positive": [
+        "STARHun",
+        "Докеси"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "slides",
+      "url": "https://slides.com/{username}",
+      "check_url": "https://slides.com/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Presentations by",
+      "negative_marker": "You may have mistyped the address",
+      "known_positive": [
+        "arunthomas"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "soc.citizen4.eu",
+      "url": "https://soc.citizen4.eu/profile/{username}/profile",
+      "check_url": "https://soc.citizen4.eu/profile/{username}/profile",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@soc.citizen4.eu",
+      "negative_marker": "Nie znaleziono",
+      "known_positive": [
+        "admin",
+        "miklo"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "social.bund.de",
+      "url": "https://social.bund.de/@{username}",
+      "check_url": "https://social.bund.de/@{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "@social.bund.de) - social.bund.de</title>",
+      "negative_marker": "<title>The page you are looking for isn&#39;t here.",
+      "known_positive": [
+        "bfdi",
+        "bmdv"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "solo.to",
+      "url": "https://solo.to/{username}",
+      "check_url": "https://solo.to/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "create your own page",
+      "negative_marker": "The page you're looking for isn't here.",
+      "known_positive": [
+        "saruei",
+        "yui"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "SoundCloud",
+      "url": "https://soundcloud.com/{username}",
+      "check_url": "https://soundcloud.com/{username}",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"hydratable\":\"user\"",
+      "negative_marker": "<title>SoundCloud - Hear the world’s sounds</title>",
+      "known_positive": [
+        "wakaflockaflame",
+        "scumgang6ix9ine"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Speaker Deck",
+      "url": "https://speakerdeck.com/{username}/",
+      "check_url": "https://speakerdeck.com/{username}/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": ") on Speaker Deck</title>",
+      "negative_marker": "User Not Found - Speaker Deck",
+      "known_positive": [
+        "petecheslock",
+        "turbosmart45"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "stats.fm",
+      "url": "https://stats.fm/{username}",
+      "check_url": "https://api.stats.fm/api/v1/users/{username}",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"item\":{",
+      "negative_marker": "\"status\":404",
+      "known_positive": [
+        "korel",
+        "linnealawder"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Tanuki.pl",
+      "url": "https://tanuki.pl/profil/{username}",
+      "check_url": "https://tanuki.pl/profil/{username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "Dołączył",
+      "negative_marker": "Nie ma takiego użytkownika",
+      "known_positive": [
+        "ania",
+        "avellana"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Teletype",
+      "url": "https://teletype.in/@{username}",
+      "check_url": "https://teletype.in/@{username}",
+      "category": "blog",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"layout__content m_main blog\"",
+      "negative_marker": "class=\"error\"",
+      "known_positive": [
+        "mart11",
+        "anotherj"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Tenor",
+      "url": "https://tenor.com/users/{username}",
+      "check_url": "https://tenor.com/users/{username}",
+      "category": "images",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"ProfilePage page\"",
+      "negative_marker": "class=\"error-page container page\"",
+      "known_positive": [
+        "maggie342",
+        "d33jay23"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "TETR.IO",
+      "url": "https://ch.tetr.io/u/{username}",
+      "check_url": "https://ch.tetr.io/api/users/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"success\":true",
+      "negative_marker": "\"success\":false",
+      "known_positive": [
+        "icly",
+        "5han"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Tilde.zone (Mastodon Instance)",
+      "url": "https://tilde.zone/@{username}",
+      "check_url": "https://tilde.zone/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "ben",
+        "lunatic"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Tooting.ch (Mastodon Instance)",
+      "url": "https://tooting.ch/@{username}",
+      "check_url": "https://tooting.ch/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "mikebeganyi",
+        "Zugi"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "TRAKTRAIN",
+      "url": "https://traktrain.com/{username}",
+      "check_url": "https://traktrain.com/{username}",
+      "category": "music",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "id=\"userId\"",
+      "negative_marker": "class=\"title-404\"",
+      "known_positive": [
+        "terrotuga",
+        "fr4ud"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "TruckersMP.Ru",
+      "url": "https://truckersmp.ru/{username}",
+      "check_url": "https://truckersmp.ru/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"b-user-page\"",
+      "negative_marker": "class=\"b-handler-error-404\"",
+      "known_positive": [
+        "ramanbardashevich",
+        "Sanya193Rus"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Tweetapus",
+      "url": "https://tweeta.tiago.zip/@{username}",
+      "check_url": "https://tweetapus.tiag.workers.dev/@{username}.json",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "\"error\": \"User not found\"",
+      "known_positive": [
+        "tiago",
+        "admin"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Twitcast",
+      "url": "https://twitcasting.tv/{username}",
+      "check_url": "https://frontendapi.twitcasting.tv/users/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"user\":{",
+      "negative_marker": "\"message\":\"User Not Found\"",
+      "known_positive": [
+        "yuno___nico",
+        "2_t0_"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Untappd",
+      "url": "https://untappd.com/user/{username}/",
+      "check_url": "https://untappd.com/user/{username}/",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"cont user_profile\"",
+      "negative_marker": "",
+      "known_positive": [
+        "Welcomenetguy",
+        "patpatcarney"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Vkl.world (Mastodon Instance)",
+      "url": "https://vkl.world/@{username}",
+      "check_url": "https://vkl.world/api/v1/accounts/lookup?acct={username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "display_name",
+      "negative_marker": "Record not found",
+      "known_positive": [
+        "king",
+        "aniver"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "VseTop",
+      "url": "https://vsetop.org/user/{username}/",
+      "check_url": "https://vsetop.org/user/{username}/",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"userinfo\"",
+      "negative_marker": "<p>Пользователь с таким именем не найден.</p>",
+      "known_positive": [
+        "pyau",
+        "DarkenSouls"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Warmerise",
+      "url": "https://warmerise.com/profile/{username}",
+      "check_url": "https://warmerise.com/profile/{username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<div id='profile_photo",
+      "negative_marker": "<h2>Page Not Found",
+      "known_positive": [
+        "alfrevid",
+        "thepro"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Weasyl",
+      "url": "https://www.weasyl.com/~{username}",
+      "check_url": "https://www.weasyl.com/~{username}",
+      "category": "images",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "profile — Weasyl</title>",
+      "negative_marker": "This user doesn't seem to be in our database.",
+      "known_positive": [
+        "weasyl",
+        "test"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Weblate",
+      "url": "https://hosted.weblate.org/user/{username}/",
+      "check_url": "https://hosted.weblate.org/user/{username}/",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"user-page text-center\"",
+      "negative_marker": "<h2>Page Not Found</h2>",
+      "known_positive": [
+        "login836039",
+        "Datura0808"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Wimkin-PublicProfile",
+      "url": "https://wimkin.com/{username}",
+      "check_url": "https://wimkin.com/{username}",
+      "category": "political",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "is on WIMKIN",
+      "negative_marker": "",
+      "known_positive": [
+        "alex",
+        "smith",
+        "boomer"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T18:18:30.247861+00:00"
+    },
+    {
+      "name": "Wowhead",
+      "url": "https://www.wowhead.com/user={username}",
+      "check_url": "https://www.wowhead.com/user={username}",
+      "category": "gaming",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": " Profile - Wowhead",
+      "negative_marker": "Error - Wowhead",
+      "known_positive": [
+        "Ashelia",
+        "Zizarz"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Wykop",
+      "url": "https://wykop.pl/ludzie/{username}",
+      "check_url": "https://wykop.pl/ludzie/{username}",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<title>Profil:",
+      "negative_marker": "Wystąpił błąd 404.",
+      "known_positive": [
+        "test",
+        "test2"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "YesWeHack",
+      "url": "https://yeswehack.com/hunters/{username}",
+      "check_url": "https://api.yeswehack.com/hunters/{username}",
+      "category": "tech",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"username\":",
+      "negative_marker": "\"code\":404",
+      "known_positive": [
+        "xel",
+        "rabhi"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "youpic",
+      "url": "https://youpic.com/photographer/{username}",
+      "check_url": "https://youpic.com/photographer/{username}",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "<meta name=\"og:title\"",
+      "negative_marker": "<title>YouPic — Not Found</title>",
+      "known_positive": [
+        "photodude",
+        "mike"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "zhihu",
+      "url": "https://www.zhihu.com/people/{username}",
+      "check_url": "https://api.zhihu.com/books/people/{username}/publications?offset=0&limit=5",
+      "category": "social",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "\"is_start\": true",
+      "negative_marker": "\"name\": \"NotFoundException\"",
+      "known_positive": [
+        "lushnis",
+        "kan-shu-jiao-hua-shai-tai-yang"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    },
+    {
+      "name": "Военное обозрение",
+      "url": "https://topwar.ru/user/{username}/",
+      "check_url": "https://topwar.ru/user/{username}/",
+      "category": "hobby",
+      "page_kind": "catalog",
+      "expected_status": [
+        200
+      ],
+      "not_found_status": [
+        404
+      ],
+      "positive_code": 200,
+      "negative_code": 404,
+      "positive_marker": "class=\"puser-info\"",
+      "negative_marker": "class=\"error-container\"",
+      "known_positive": [
+        "Cympak",
+        "Madrina"
+      ],
+      "health": "HEALTHY",
+      "last_tested": "2026-10-01T17:11:00.709925+00:00"
+    }
+  ]
+}
